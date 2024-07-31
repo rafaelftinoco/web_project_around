@@ -15,22 +15,24 @@
         <img src="images/headerlogo.png" alt="logo" class="header__image" />
       </header>
       <main class="content">
-        <div class="profile">
+        <section class="profile">
           <img
             class="profile__image"
             src="images/profileavatar2.jpg"
             alt="Profile Picture"
           />
           <div class="profile__info">
-            <h1 class="profile__name">Jacques Costeau</h1>
-            <input
-              class="profile__edit-button"
-              type="image"
-              src="images/editbutton.png"
-              name="edit-button"
-              id="edit-button"
-              alt="editbutton.png"
-            />
+            <div class="profile__container-name-editbtn">
+              <h1 class="profile__name">Jacques Costeau</h1>
+              <input
+                class="profile__edit-button"
+                type="image"
+                src="images/editbutton.png"
+                name="edit-button"
+                id="edit-button"
+                alt="editbutton.png"
+              />
+            </div>
             <p class="profile__subheading">Explorador</p>
           </div>
           <input
@@ -39,8 +41,8 @@
             src="images/addbutton.png"
             alt="addbutton.png"
           />
-        </div>
-        <div class="cards">
+        </section>
+        <section class="cards">
           <div class="card">
             <img
               src="images/card1.jpg"
@@ -78,7 +80,7 @@
           <div class="card">
             <img src="images/card3.png" alt="Montanhas.png" />
             <div class="card__description">
-              <h3 class="card__name">Montanhas Care...</h3>
+              <h3 class="card__name">Montanhas Carecas</h3>
               <input
                 type="image"
                 src="images/likebutton.svg"
@@ -123,7 +125,7 @@
               />
             </div>
           </div>
-        </div>
+        </section>
       </main>
       <footer class="footer">
         <p class="footer__copyright">&#169; 2021 Around the U.S.</p>
@@ -144,12 +146,14 @@
               class="popup__input-name"
               placeholder="Nome"
               id="popup-input-name"
+              required
             />
             <input
               type="text"
               class="popup__input-about-me"
               id="popup-input-about-me"
               placeholder="Sobre mim"
+              required
             />
 
             <button
@@ -163,6 +167,6 @@
         </div>
       </div>
     </div>
-    <script src="scripts/script.js"></script>
+    <script type="module" src="scripts/script.js"></script>
   </body>
 </html>

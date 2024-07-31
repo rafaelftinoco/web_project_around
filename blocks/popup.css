@@ -48,12 +48,22 @@
   align-items: flex-start;
   width: 358px;
   padding-left: 35px;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.94px;
+  text-align: left;
 }
 .popup__input-name {
   margin-bottom: 30px;
   width: 358px;
   border: none;
   border-bottom: 1px solid #000000;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.94px;
+  text-align: left;
 }
 .popup__input-about-me {
   margin-bottom: 30px;

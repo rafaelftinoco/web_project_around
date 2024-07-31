@@ -20,6 +20,9 @@
   font-weight: 900;
   line-height: 29.05px;
   text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .card__image {
   width: 282px;
