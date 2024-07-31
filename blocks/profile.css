@@ -52,7 +52,6 @@
   white-space: nowrap;
   overflow: hidden;
 }
-
 .profile__edit-button:hover {
   opacity: 50%;
 }
@@ -94,10 +93,6 @@
     align-self: center;
     margin: 0 14px 0 0;
   }
-  .profile__edit-button {
-    align-self: center;
-    justify-self: flex-start;
-  }
   .profile__subheading {
     font-family: "Inter";
     font-size: 14px;
@@ -107,6 +102,10 @@
     align-self: center;
     margin-bottom: 36px;
     margin-top: 14px;
+  }
+  .profile__edit-button {
+    align-self: center;
+    justify-self: flex-start;
   }
   .profile__add-button {
     margin: 0;
