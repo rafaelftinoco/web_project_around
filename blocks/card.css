@@ -1,0 +1,37 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  max-width: 282px;
+}
+.card__description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 246px;
+  height: 79px;
+  padding: 0 21px 15px 31px;
+}
+.card__name {
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 29.05px;
+  text-align: left;
+}
+.card__image {
+  width: 282px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.card__like-button {
+  justify-self: flex-end;
+}
+.card__like-button:hover {
+  opacity: 50%;
+}
+.card__like-button:active {
+  background-color: #fff;
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Rafael Tinoco" />
+    <meta name="description" content="Rede social de fotos dos EUA" />
+    <meta name="keywords" content="Rede social, fotos, paisagem" />
+    <link rel="stylesheet" href="./pages/index.css" />
+    <title>Ao Redor dos EUA</title>
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <img src="images/headerlogo.png" alt="logo" class="header__image" />
+      </header>
+      <main class="content">
+        <div class="profile">
+          <img
+            class="profile__image"
+            src="images/profileavatar2.jpg"
+            alt="Profile Picture"
+          />
+          <div class="profile__info">
+            <h1 class="profile__name">Jacques Costeau</h1>
+            <input
+              class="profile__edit-button"
+              type="image"
+              src="images/editbutton.png"
+              name="edit-button"
+              id="edit-button"
+            />
+            <p class="profile__subheading">Explorador</p>
+          </div>
+          <input
+            class="profile__add-button"
+            type="image"
+            src="images/addbutton.png"
+            name=""
+            id=""
+          />
+        </div>
+        <div class="cards">
+          <div class="card">
+            <img
+              src="images/card1.jpg"
+              alt="Vale de Yosemite.png"
+              class="card__image"
+            />
+            <div class="card__description">
+              <h3 class="card__name">Vale de Yosemite</h3>
+              <input
+                type="image"
+                src="images/likebutton.svg"
+                name="likebutton"
+                class="card__like-button"
+              />
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="images/card2.png"
+              alt="Lago Louise.png"
+              class="card__image"
+            />
+            <div class="card__description">
+              <h3 class="card__name">Lago Louise</h3>
+              <input
+                type="image"
+                src="images/likebutton.svg"
+                name="likebutton"
+                class="card__like-button"
+              />
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/card3.png" alt="Montanhas.png" />
+            <div class="card__description">
+              <h3 class="card__name">Montanhas Care...</h3>
+              <input
+                type="image"
+                src="images/likebutton.svg"
+                class="card__like-button"
+              />
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/card4.png" alt="Latemar.png" />
+            <div class="card__description">
+              <h3 class="card__name">Latemar</h3>
+              <input
+                type="image"
+                src="images/likebutton.svg"
+                class="card__like-button"
+              />
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/card5.png" alt="Vanoise Nationa.png" />
+            <div class="card__description">
+              <h3 class="card__name">Vaniose Nationa</h3>
+              <input
+                type="image"
+                src="images/likebutton.svg"
+                class="card__like-button"
+              />
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/card6.png" alt="Lago di Braies.png" />
+            <div class="card__description">
+              <h3 class="card__name">Lago di Braies</h3>
+              <input
+                type="image"
+                src="images/likebutton.svg"
+                class="card__like-button"
+              />
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <p class="footer__copyright">&#169; 2021 Around the U.S.</p>
+      </footer>
+      <div class="overlay overlay__hidden" id="overlay">
+        <div class="popup" id="popup">
+          <input
+            type="image"
+            src="images/closeicon.png"
+            alt="Close Icon.png"
+            class="popup__close-icon"
+            id="popup-close-btn"
+          />
+          <form class="popup__form" id="popup-form">
+            <h3 class="popup__title">Editar perfil</h3>
+            <input
+              type="text"
+              class="popup__input-name"
+              placeholder="Nome"
+              id="popup-input-name"
+            />
+            <input
+              type="text"
+              class="popup__input-about-me"
+              id="popup-input-about-me"
+              placeholder="Sobre mim"
+            />
+
+            <button
+              type="submit"
+              class="popup__submit-button"
+              id="popup-submit-button"
+            >
+              Salvar
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
