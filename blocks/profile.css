@@ -32,7 +32,7 @@
   line-height: 48px;
   text-align: left;
   color: white;
-
+  max-width: 373px;
   margin-top: 0;
   margin-bottom: 16px;
   text-overflow: ellipsis;
@@ -47,6 +47,7 @@
   text-align: left;
   color: white;
   margin: 0;
+  max-width: 373px;
   align-self: flex-start;
   text-overflow: ellipsis;
   white-space: nowrap;
