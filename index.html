@@ -40,98 +40,16 @@
             type="image"
             src="images/addbutton.png"
             alt="addbutton.png"
+            id="add-button"
           />
         </section>
-        <section class="cards">
-          <div class="card">
-            <img
-              src="images/card1.jpg"
-              alt="Vale de Yosemite.png"
-              class="card__image"
-            />
-            <div class="card__description">
-              <h3 class="card__name">Vale de Yosemite</h3>
-              <input
-                type="image"
-                src="images/likebutton.svg"
-                name="likebutton"
-                class="card__like-button"
-                alt="likebutton.svg"
-              />
-            </div>
-          </div>
-          <div class="card">
-            <img
-              src="images/card2.png"
-              alt="Lago Louise.png"
-              class="card__image"
-            />
-            <div class="card__description">
-              <h3 class="card__name">Lago Louise</h3>
-              <input
-                type="image"
-                src="images/likebutton.svg"
-                name="likebutton"
-                class="card__like-button"
-                alt="likebutton.svg"
-              />
-            </div>
-          </div>
-          <div class="card">
-            <img src="images/card3.png" alt="Montanhas.png" />
-            <div class="card__description">
-              <h3 class="card__name">Montanhas Carecas</h3>
-              <input
-                type="image"
-                src="images/likebutton.svg"
-                class="card__like-button"
-                alt="likebutton.svg"
-              />
-            </div>
-          </div>
-          <div class="card">
-            <img src="images/card4.png" alt="Latemar.png" />
-            <div class="card__description">
-              <h3 class="card__name">Latemar</h3>
-              <input
-                type="image"
-                src="images/likebutton.svg"
-                class="card__like-button"
-                alt="likebutton.svg"
-              />
-            </div>
-          </div>
-          <div class="card">
-            <img src="images/card5.png" alt="Vanoise Nationa.png" />
-            <div class="card__description">
-              <h3 class="card__name">Vaniose Nationa</h3>
-              <input
-                type="image"
-                src="images/likebutton.svg"
-                class="card__like-button"
-                alt="likebutton.svg"
-              />
-            </div>
-          </div>
-          <div class="card">
-            <img src="images/card6.png" alt="Lago di Braies.png" />
-            <div class="card__description">
-              <h3 class="card__name">Lago di Braies</h3>
-              <input
-                type="image"
-                src="images/likebutton.svg"
-                class="card__like-button"
-                alt="likebutton.svg"
-              />
-            </div>
-          </div>
-        </section>
+        <section class="cards"></section>
       </main>
       <footer class="footer">
         <p class="footer__copyright">&#169; 2021 Around the U.S.</p>
       </footer>
       <div class="overlay" id="overlay">
-        <div class="popup" id="popup">
+        <div class="popup" id="editpopup">
           <input
             type="image"
             src="images/closeicon.png"
@@ -165,8 +83,69 @@
             </button>
           </form>
         </div>
+        <div class="popup add__popup" id="addpopup">
+          <input
+            type="image"
+            src="images/closeicon.png"
+            alt="Close Icon.png"
+            class="popup__close-icon"
+            id="addpopup-close-btn"
+          />
+          <form class="popup__form" id="addpopup-form">
+            <h3 class="popup__title">Novo Local</h3>
+            <input
+              type="text"
+              class="popup__input-name"
+              placeholder="Local"
+              id="addpopup-input-name"
+              required
+            />
+            <input
+              type="text"
+              class="popup__input-about-me"
+              id="addpopup-input-url"
+              placeholder="URL da Imagem"
+              required
+            />
+
+            <button
+              type="submit"
+              class="popup__submit-button"
+              id="addpopup-submit-button"
+            >
+              Criar
+            </button>
+          </form>
+        </div>
+        <div class="popup__image" id="imagepopup">
+          <input
+            type="image"
+            src="images/closeicon.png"
+            alt="Close Icon.png"
+            class="popup__image-close-icon"
+            id="imgpopup-close-btn"
+          />
+          <img src="" alt="" class="popup__photo" />
+          <p class="popup__name"></p>
+        </div>
       </div>
     </div>
+    <template id="card-template">
+      <div class="card">
+        <img src="images/trash.png" alt="trash.png" class="card__remove-btn" />
+        <img src="/" alt="" class="card__image" />
+        <div class="card__description">
+          <h3 class="card__name"></h3>
+          <input
+            type="image"
+            src="/images/likebutton.png"
+            name="likebutton"
+            class="card__like-button"
+            alt="likebutton.png"
+          />
+        </div>
+      </div>
+    </template>
     <script type="module" src="scripts/script.js"></script>
   </body>
 </html>

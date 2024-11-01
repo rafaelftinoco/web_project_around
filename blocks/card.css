@@ -1,18 +1,21 @@
 .card {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: white;
   border-radius: 10px;
   max-width: 282px;
+  max-height: 361px;
 }
 .card__description {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 246px;
-  height: 79px;
-  padding: 0 21px 15px 31px;
+  width: 282px;
+  border-radius: 0 0 10px 10px;
+  background-color: white;
+  padding: 0 15px;
+  box-sizing: border-box;
 }
 .card__name {
   font-family: "Inter";
@@ -26,15 +29,28 @@
 }
 .card__image {
   width: 282px;
+  height: 282px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
+.card__remove-btn {
+  position: absolute;
+  width: 18px;
+  height: 19px;
+  top: 18px;
+  right: 15px;
+}
+.card__remove-btn:hover {
+  opacity: 50%;
+}
 .card__like-button {
   justify-self: flex-end;
+  background-image: url(../images/likebutton.png);
 }
 .card__like-button:hover {
   opacity: 50%;
 }
-.card__like-button:active {
-  background-color: #fff;
+
+.card__like-button-active {
+  background-image: url(../images/likebuttonactive.png);
 }
